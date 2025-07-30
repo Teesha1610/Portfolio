@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 40px 10px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  /* removed backdrop-filter for simplicity */
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #222;
+}
+
+header a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  margin: 30px 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #222;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  width: 230px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: none;
+  cursor: default;
+}
+
+.card:hover {
+  /* Removed hover effect for simpler code */
+}
+
+.card span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 7px;
+  color: #555;
+}
