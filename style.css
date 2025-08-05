@@ -1,86 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-* {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
-  color: #333;
 }
 
 header {
+  background-color: #333;
+  color: white;
   text-align: center;
-  padding: 40px 10px 20px;
-  background: rgba(255, 255, 255, 0.7);
-  /* removed backdrop-filter for simplicity */
-}
-
-header h1 {
-  font-size: 2rem;
-  color: #222;
+  padding: 20px;
 }
 
 header a {
-  color: #004080;
+  color: lightblue;
   text-decoration: none;
-  font-weight: 600;
 }
 
 main {
-  max-width: 900px;
+  width: 80%;
   margin: auto;
   padding: 20px;
 }
 
-section {
-  margin: 30px 0;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease;
-}
-
 h2 {
-  font-size: 1.6rem;
-  margin-bottom: 15px;
-  color: #222;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
   text-align: center;
 }
 
-p {
-  text-align: center;
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.card {
+section {
   background: white;
   padding: 15px;
-  width: 230px;
-  border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.skills, .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.box {
+  background: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 200px;
   text-align: center;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: none;
-  cursor: default;
+  transition: 0.3s;
 }
 
-.card:hover {
-  /* Removed hover effect for simpler code */
-}
-
-.card span {
-  display: block;
-  font-size: 0.9rem;
-  margin-top: 7px;
-  color: #555;
+.box:hover {
+  background: #ddd;
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
